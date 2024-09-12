@@ -11,9 +11,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Loops", "Loops\Loops.csproj
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Arrays", "Arrays\Arrays.csproj", "{557F8E9B-9286-4714-9D59-1DD240B81BA0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Metodlar", "Metodlar\Metodlar.csproj", "{2D197B00-6BA1-47AA-A735-F08C59E425A9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Metodlar", "Metodlar\Metodlar.csproj", "{2D197B00-6BA1-47AA-A735-F08C59E425A9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetodUygulama", "MetodUygulama\MetodUygulama.csproj", "{58AEDB8A-5C1A-4ED5-9AD2-96F44DDA435D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MetodUygulama", "MetodUygulama\MetodUygulama.csproj", "{58AEDB8A-5C1A-4ED5-9AD2-96F44DDA435D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_Giris", "OOP_Giris\OOP_Giris.csproj", "{04731A36-6399-4160-A778-DFCEF3859A0C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{58AEDB8A-5C1A-4ED5-9AD2-96F44DDA435D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{58AEDB8A-5C1A-4ED5-9AD2-96F44DDA435D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{58AEDB8A-5C1A-4ED5-9AD2-96F44DDA435D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04731A36-6399-4160-A778-DFCEF3859A0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04731A36-6399-4160-A778-DFCEF3859A0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04731A36-6399-4160-A778-DFCEF3859A0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04731A36-6399-4160-A778-DFCEF3859A0C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
