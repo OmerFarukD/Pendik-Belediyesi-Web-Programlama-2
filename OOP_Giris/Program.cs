@@ -9,12 +9,26 @@ computer.Islemci = "İntel i7 13000h";
 computer.Stock = 25;
 computer.Fiyat = 18000;
 
-//ComputerManager bilgisayarYontecisi = new ComputerManager();
-//bilgisayarYontecisi.Add(computer);
-//bilgisayarYontecisi.Remove(computer);
-//bilgisayarYontecisi.Update(computer);
+Computer bilgisayar = new Computer("Monster Abra",32,"İntel i5 13000H","NVIDIA RTX 4070",25,58000);
+
+
+
+Console.WriteLine(bilgisayar);
+ComputerManager bilgisayarYontecisi = new ComputerManager();
+
 
 Console.WriteLine(computer);
+Computer bilgisayar1 = new Computer()
+{
+    EkranKarti = "Deneme xyz",
+    Fiyat = 25,
+    Islemci = "Deneme işlemcisi",
+    Marka = string.Empty,
+    Ram = 32,
+    Stock = 36
+};
+
+bilgisayarYontecisi.Add(bilgisayar1);
 
 
 
@@ -22,6 +36,22 @@ Console.WriteLine(computer);
 
 class Computer
 {
+
+    public Computer()
+    {
+
+    }
+
+    public Computer(string marka, int ram, string islemci, string ekranKarti,int stock, double fiyat)
+    {
+        Marka = marka;
+        Ram = ram;
+        Islemci = islemci;
+        EkranKarti = ekranKarti;
+        Stock = stock;
+        Fiyat = fiyat;
+    }
+
     public string Marka;
     public int Ram;
     public string Islemci;
@@ -58,6 +88,19 @@ class ComputerManager
 {
     public void Add(Computer computer)
     {
+        if (computer.Ram<0)
+        {
+            Console.WriteLine("Bilgisayarın Ram i 0 dan küçük olamaz.");
+            return;
+        }
+
+        if (string.IsNullOrWhiteSpace(computer.Marka))
+        {
+            Console.WriteLine("Bilgisayarın marka değeri alanı zorunludur.");
+            return;
+        }
+
+
         Console.WriteLine("Bilgisayar eklendi");
         computer.EkranaYaz();
         // veri tabanına bağlan 
