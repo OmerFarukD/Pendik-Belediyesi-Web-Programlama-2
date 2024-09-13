@@ -1,5 +1,9 @@
-﻿Console.WriteLine("Hello, World!");
+﻿
+
+Console.WriteLine("Hello, World!");
 // Computer ->  Marka,Ram , Islemci , Ekran Kartı, stok, Fiyat
+
+
 
 Computer computer =new Computer();
 computer.EkranKarti = "Nvidia gtx 1050ti";
@@ -99,8 +103,6 @@ class ComputerManager
             Console.WriteLine("Bilgisayarın marka değeri alanı zorunludur.");
             return;
         }
-
-
         Console.WriteLine("Bilgisayar eklendi");
         computer.EkranaYaz();
         // veri tabanına bağlan 
@@ -122,11 +124,6 @@ class ComputerManager
     {
         Console.WriteLine("Bilgisayar güncellendi.");
         computer.EkranaYaz();
-        // veri tabanına bağlan 
-        // veriyi güncelle 
-        // hata yoksa olayları kaydet
         Console.WriteLine("************************************");
     }
 }
-// TelefonManager class ını yazınız
-
