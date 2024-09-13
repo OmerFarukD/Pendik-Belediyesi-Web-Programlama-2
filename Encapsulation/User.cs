@@ -7,11 +7,11 @@ public class User
 {
 
     private string name;
+    private string surname;
 
-
-    public string Name
+    public  string Name
     {
-        set
+        init
         {
             if (value.Length<2)
             {
@@ -26,10 +26,30 @@ public class User
             return name;
         }
     }
-    public string Surname { get; set; }
+    public string Surname 
+    {
+        set
+        {
+            if(value.Length < 2)
+            {
+                Console.WriteLine("Soyad alanı 2 den büyük olmak zorundadır.");
+                return;
+            }
+            surname = value;
+        }
+        get
+        {
+            return surname;
+        }
+    }
     public string Email { get; set; }
     public string Password { get; set; }
-    public string FullName { get; set; }
+    
+    public string FullName {
+        get {
+            return $"{name} {surname}";
+        }
+    }
 
 
     public override string ToString()
