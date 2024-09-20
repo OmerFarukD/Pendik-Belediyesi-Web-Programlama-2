@@ -3,8 +3,6 @@ namespace Encapsulation;
 
 public class Apricot
 {
-
-
     public string Cins { get; init; }
     public int Kg { get; init; }
 

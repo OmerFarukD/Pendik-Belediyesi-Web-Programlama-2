@@ -17,7 +17,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MetodUygulama", "MetodUygul
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OOP_Giris", "OOP_Giris\OOP_Giris.csproj", "{04731A36-6399-4160-A778-DFCEF3859A0C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Encapsulation", "Encapsulation\Encapsulation.csproj", "{63631935-6836-4B34-BA88-6C730EB6C263}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Encapsulation", "Encapsulation\Encapsulation.csproj", "{63631935-6836-4B34-BA88-6C730EB6C263}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Records", "Records\Records.csproj", "{F032B3AE-656C-4E2A-B8EE-164C1ED649C1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inheritance", "Inheritance\Inheritance.csproj", "{24C70318-47FF-4668-B9F4-E0453C4204E9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +61,14 @@ Global
 		{63631935-6836-4B34-BA88-6C730EB6C263}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{63631935-6836-4B34-BA88-6C730EB6C263}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{63631935-6836-4B34-BA88-6C730EB6C263}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F032B3AE-656C-4E2A-B8EE-164C1ED649C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F032B3AE-656C-4E2A-B8EE-164C1ED649C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F032B3AE-656C-4E2A-B8EE-164C1ED649C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F032B3AE-656C-4E2A-B8EE-164C1ED649C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24C70318-47FF-4668-B9F4-E0453C4204E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24C70318-47FF-4668-B9F4-E0453C4204E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24C70318-47FF-4668-B9F4-E0453C4204E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24C70318-47FF-4668-B9F4-E0453C4204E9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
