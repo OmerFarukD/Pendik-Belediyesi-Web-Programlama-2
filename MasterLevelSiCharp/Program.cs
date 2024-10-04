@@ -1,38 +1,56 @@
 ﻿using MasterLevelSiCharp.Models;
+using MasterLevelSiCharp.Models.Transformers;
+using MasterLevelSiCharp.Models.Transformers.Mappers;
 
-Console.WriteLine(2+5);
+//Book book = new Book()
+//{
+//    Id = 1,
+//    Title = "Test",
+//    Description = "Test",
+//};
+
+//Categgory category = new Categgory()
+//{
+//    Id = 1,
+//    Name = "Dram",
+//    Books = new List<Book>()
+//};
 
 
-Book book = new Book()
+//category = category + book;
+
+//category = category + book;
+
+//category = category + book;
+
+//category = category + book;
+
+//category = category + book;
+
+
+
+//category = category - book;
+
+//category = category - book;
+
+//category = category - book;
+
+//category.Books.ForEach(x => Console.WriteLine(x));
+
+//void AddBookToCategory(Book book)
+//{
+//    category.Books.Add(book);
+//}
+
+CreateElmaDto dto = new CreateElmaDto()
 {
-    Id = 1,
-    Title = "Test",
-    Description = "Test",
+    Color = Color.Red,
+    KgPrice = 45,
+    SellerName = "Muhammed Talha Özer",
+    Type = "Yeşil Elma"
 };
 
-Categgory category = new Categgory()
-{
-    Id = 1,
-    Name = "Dram",
-    Books = new List<Book>()
-};
+Elma elma = ElmaMapper.ConvertToEntity(dto);
+ElmaResponseDto response = ElmaMapper.ConvertToResponseDto(elma);
+Console.WriteLine(response);
 
-
-category = category + book;
-
-category = category + book;
-
-category = category + book;
-
-category = category + book;
-
-category = category + book;
-
-category.Books.ForEach(x => Console.WriteLine(x));
-
-
-
-void AddBookToCategory(Book book)
-{
-    category.Books.Add(book);
-}

@@ -22,6 +22,12 @@ public class Categgory
      return c;
     }
 
+    public static Categgory operator -(Categgory c, Book b)
+    {
+        c.Books.Remove(b);
+        return c;
+    }
+
     //  - operatörünü ezerek ilgili kategoriden kitap nesnesini listeden çıkaran kofu yazınız.
 
 
