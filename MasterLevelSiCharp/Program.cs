@@ -50,7 +50,11 @@ CreateElmaDto dto = new CreateElmaDto()
     Type = "Yeşil Elma"
 };
 
-Elma elma = ElmaMapper.ConvertToEntity(dto);
-ElmaResponseDto response = ElmaMapper.ConvertToResponseDto(elma);
+//Elma elma = ElmaMapper.ConvertToEntity(dto);
+//ElmaResponseDto response = ElmaMapper.ConvertToResponseDto(elma);
+//Console.WriteLine(response);
+
+Elma elma = (Elma)dto; // explicit dönüşüm
+ElmaResponseDto response = elma; // implicit dönüşüm
 Console.WriteLine(response);
 

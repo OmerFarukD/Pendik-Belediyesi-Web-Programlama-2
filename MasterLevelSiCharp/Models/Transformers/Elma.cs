@@ -22,6 +22,17 @@ public class Elma
     public string Type { get; set; }
 
 
+    public static explicit operator Elma(CreateElmaDto dto)
+    {
+        return new Elma
+        {
+            Color = dto.Color,
+            KgPrice = dto.KgPrice,
+            SellerName = dto.SellerName,
+            Type = dto.Type,
+        };
+    }
+
     public override string ToString()
     {
         return $"Id : {Id}, Kg Fiyatı : {KgPrice}, Renk : {Color}, " +

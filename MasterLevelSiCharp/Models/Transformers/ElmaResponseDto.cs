@@ -19,4 +19,14 @@ public class ElmaResponseDto
         return $" Kg Fiyatı : {KgPrice}, Renk : {Color}, " +
     $"Tipi : {Type}";
     }
+
+    public static implicit operator ElmaResponseDto(Elma elma)
+    {
+        return new ElmaResponseDto
+        {
+            Color = elma.Color,
+            Type = elma.Type,
+            KgPrice = elma.KgPrice
+        };
+    }
 }
